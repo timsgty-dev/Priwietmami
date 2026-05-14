@@ -2,16 +2,211 @@
 <html>
 <head>
     <meta charset="UTF-8">
-    <title>b hh</title>
+    <title>Business Promo Page</title>
+
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background: #f5f5f5;
+            color: #222;
+        }
+
+        /* Главный блок */
+        .hero {
+            background: linear-gradient(135deg, #0077ff, #00c6ff);
+            color: white;
+            padding: 80px 20px;
+            text-align: center;
+        }
+
+            .hero h1 {
+                font-size: 48px;
+                margin-bottom: 10px;
+            }
+
+            .hero p {
+                font-size: 20px;
+                margin-bottom: 20px;
+            }
+
+            .hero button {
+                padding: 15px 30px;
+                background: gold;
+                border: none;
+                border-radius: 10px;
+                font-size: 18px;
+                cursor: pointer;
+            }
+
+        /* Блок преимуществ */
+        .features {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            padding: 40px 20px;
+        }
+
+        .feature {
+            background: white;
+            padding: 20px;
+            width: 250px;
+            border-radius: 15px;
+            text-align: center;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+        }
+
+            .feature h3 {
+                margin-bottom: 10px;
+            }
+
+        /* О компании */
+        .about {
+            padding: 60px 20px;
+            text-align: center;
+        }
+
+            .about h2 {
+                margin-bottom: 10px;
+            }
+
+            .about p {
+                max-width: 600px;
+                margin: 0 auto;
+                font-size: 18px;
+            }
+
+        /* Услуги */
+        .services {
+            padding: 40px 20px;
+            text-align: center;
+        }
+
+        .service-list {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+        }
+
+        .service {
+            background: white;
+            padding: 20px;
+            width: 250px;
+            border-radius: 15px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+        }
+
+        /* Отзывы */
+        .reviews {
+            background: #eee;
+            padding: 40px 20px;
+            text-align: center;
+        }
+
+        .review {
+            max-width: 500px;
+            margin: 0 auto;
+            font-style: italic;
+        }
+
+        /* Контакты */
+        .contact {
+            padding: 60px 20px;
+            text-align: center;
+            background: #0077ff;
+            color: white;
+        }
+
+            .contact button {
+                padding: 15px 30px;
+                background: gold;
+                border: none;
+                border-radius: 10px;
+                font-size: 18px;
+                cursor: pointer;
+            }
+    </style>
 </head>
+
 <body>
-    <h1>Wood white wifi</h1>
-    <p>Делаем бревна на стульчиках.</p>
-    <link rel="stylesheet" href="style.css">
-    <img src="wifi.jpg" alt="Мой котик">
-    <script src="script.js"></script>
 
+    <!-- Главный блок -->
+    <div class="hero">
+        <h1>L-Wood</h1>
+        <p>Быстро, качественно и профессионально</p>
+        <button id="tg">Связаться с нами</button>
+        <script>
+            const button = document.getElementById("tg");
+            const url = "https://www.instagram.com/wood_wide?igsh=c3o4anFxYzk3bXk3";
+            button.onclick = function() {
+    window.location.href = url;
+};
 
+        </script>
+    </div>
+
+    <!-- Преимущества -->
+    <div class="features">
+        <div class="feature">
+            <h3>⭐ Высокое качество</h3>
+            <p>Работаем только с лучшими материалами</p>
+        </div>
+
+        <div class="feature">
+            <h3>⚡ Быстрая работа</h3>
+            <p>Выполняем заказы в течение 24 часов</p>
+        </div>
+
+        <div class="feature">
+            <h3>💬 Поддержка 24/7</h3>
+            <p>Отвечаем в любое время</p>
+        </div>
+    </div>
+
+    <!-- О компании -->
+    <div class="about">
+        <h2>О нас</h2>
+        <p>Мы — команда профессионалов с многолетним опытом. Наша цель — делать вашу жизнь проще и удобнее.</p>
+    </div>
+
+    <!-- Услуги -->
+    <div class="services">
+        <h2>Наши услуги</h2>
+
+        <div class="service-list">
+            <div class="service">
+                <h3>Услуга 1</h3>
+                <p>Короткое описание услуги</p>
+                <p><b>Цена: 100 zł</b></p>
+            </div>
+
+            <div class="service">
+                <h3>Услуга 2</h3>
+                <p>Короткое описание услуги</p>
+                <p><b>Цена: 150 zł</b></p>
+            </div>
+
+            <div class="service">
+                <h3>Услуга секретная</h3>
+                <p>Посадим ваше бревно на стул</p>
+                <p><b>Цена: 200 zł</b></p>
+            </div>
+        </div>
+    </div>
+
+    <!-- Отзывы -->
+    <div class="reviews">
+        <h2>Отзывы клиентов</h2>
+        <p class="review">«Отличный сервис! Всё сделали быстро и качественно.»</p>
+        <img src="images/wifi.jpg" alt="Alternate Text" />
+    </div>
+
+    <!-- Контакты -->
+    <div class="contact">
+        <h2>Готовы начать?</h2>
+        <p>Свяжитесь с нами прямо сейчас</p>
+        <button>Написать в WhatsApp</button>
+    </div>
 
 </body>
 </html>
